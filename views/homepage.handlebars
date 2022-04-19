@@ -1,7 +1,7 @@
 <section>
   <div class="post-list">
     {{#if posts}}
-        <h3>{{posts-length}} Posts</h3> 
+        <h3>{{post-info}} Posts</h3> 
         <hr />
     {{else}}
       <h3>No Posts to Display</h3>
@@ -10,7 +10,7 @@
     
     {{#if posts}}
       {{#each posts as |post|}}
-          {{> post-preview}}
+          {{> post-info post-info post}}
       {{/each}}
     {{/if}}
    </div>
