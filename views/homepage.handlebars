@@ -1,9 +1,17 @@
-<div>
-<ol class="post-list">
-  {{#if parties.length}}
-          {{#each posts as |post|}}
-              {{> post-info post}}
-          {{/each}}
-        {{/if}}
-</ol>
-</div>
+<section>
+  <div class="post-list">
+    {{#if posts}}
+        <h3>{{posts-length}} Posts</h3> 
+        <hr />
+    {{else}}
+      <h3>No Posts to Display</h3>
+      <hr />
+    {{/if}}
+    
+    {{#if posts}}
+      {{#each posts as |post|}}
+          {{> post-preview}}
+      {{/each}}
+    {{/if}}
+   </div>
+</section>
