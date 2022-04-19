@@ -1,7 +1,9 @@
+<div>
 <ol class="post-list">
-  {{#each posts as |post|}}
-  <li>
-    {{> post-info }}
-  </li>
-  {{/each}}
+  {{#if parties.length}}
+          {{#each posts as |post|}}
+              {{> post-info post}}
+          {{/each}}
+        {{/if}}
 </ol>
+</div>
