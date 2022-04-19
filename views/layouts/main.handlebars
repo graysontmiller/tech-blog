@@ -1,4 +1,4 @@
-{{!-- <html lang="en">
+<html lang="en">
 
   <head>
     <meta charset="UTF-8" />
@@ -34,45 +34,5 @@
       <script src="/javascript/logout.js"></script>
     {{/if}}
   </body>
-
-</html> --}}
-
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Model vs Tech</title>
-  <link rel="stylesheet" href="/stylesheets/style.css">
-</head>
-
-<body>
-  <div class="wrapper">
-    <header>
-      <h1>
-        Model vs Tech - A Tech Blog
-      </h1>
-      <nav>
-        <a href="/">Home</a>
-        {{#if loggedIn}}
-        <a href="/dashboard">Dashboard</a>
-        <button id="logout" class="button-log">Logout</button>
-        {{else}}
-        <a href="/login">Login</a>
-        {{/if}}
-      </nav>
-    </header>
-    <main>
-      {{{ body }}}
-    </main>
-    <footer>
-      Only through knowledge can we strive for a better tomorrow!
-    </footer>
-  </div>
-  {{#if loggedIn}}
-  <script src="/javascript/logout.js"></script>
-  {{/if}}
-</body>
 
 </html>

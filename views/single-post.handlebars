@@ -1,4 +1,4 @@
-{{!-- {{> post-info post}}
+{{> post-info post}}
 
 {{#if loggedIn}}
   <form class="comment-form">
@@ -16,27 +16,4 @@
 
 {{#if loggedIn}}
   <script src="/javascript/comment.js"></script>
-{{/if}} --}}
-
-{{> post-info post}}
-
-{{#if loggedIn}}
-<form class="comment-form">
-  <div>
-    <textarea name="comment-body"></textarea>
-  </div>
-
-  <div>
-    <button type="submit" class="comment-button">add comment</button>
-  </div>
-</form>
-{{/if}}
-
-
-{{> comments post.comments}}
-{{!-- <button type="button" class="delete-comment-button">Delete Comment</button> --}}
-
-
-{{#if loggedIn}}
-<script src="/javascript/add-comment.js"></script>
 {{/if}}
