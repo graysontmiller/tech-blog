@@ -1,4 +1,4 @@
-<section>
+{{!-- <section>
   <div class="post-list">
     {{#if posts}}
         <h3>{{post-info}} Posts</h3> 
@@ -14,4 +14,12 @@
       {{/each}}
     {{/if}}
    </div>
-</section>
+</section> --}}
+
+<ol class="post-list">
+  {{#each posts as |post|}}
+  <li>
+    {{> post-info post}}
+  </li>
+  {{/each}}
+</ol>
