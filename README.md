@@ -10,3 +10,7 @@ A simple Tech blog, built with MySQL and handlebars.js and utilizing the MVC par
 - Node/Express server running on Heroku
 - MySQL 2 database
 - Sequelize ORM
+
+# Deployed Application
+
+https://damp-oasis-04909.herokuapp.com/
